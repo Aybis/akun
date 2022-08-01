@@ -240,7 +240,49 @@ export default function index() {
                 </div>
               </div>
             </div>
+
+            <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+              <label
+                htmlFor="file-upload"
+                className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+                KTP
+              </label>
+              <div className="mt-1 sm:mt-0 sm:col-span-2">
+                <div className="flex text-sm text-gray-600">
+                  <label
+                    htmlFor="file-upload"
+                    className="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500">
+                    <span>Upload a KTP</span>
+                    <input
+                      id="file-upload"
+                      name="file-upload"
+                      type="file"
+                      className="sr-only"
+                    />
+                  </label>
+                </div>
+                <p className="text-xs text-gray-500">PNG, JPG less than 2MB</p>
+              </div>
+            </div>
           </div>
+
+          <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+            <label
+              htmlFor="street-address"
+              className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+              Catatan
+            </label>
+            <div className="mt-1 sm:mt-0 sm:col-span-2">
+              <textarea
+                id="about"
+                name="about"
+                rows={3}
+                className="max-w-lg shadow-sm block w-full focus:ring-blue-500 focus:border-blue-500 sm:text-sm border border-gray-300 rounded-md"
+                defaultValue={''}
+              />
+            </div>
+          </div>
+
           <div className="pt-5">
             <div className="flex justify-end">
               <button

@@ -1,6 +1,6 @@
 import {
-  CheckIcon,
   ClipboardListIcon,
+  UserIcon,
   UserRemoveIcon,
 } from '@heroicons/react/solid';
 import { Headings } from '../../atoms';
@@ -16,7 +16,7 @@ const dataSummary = [
   {
     name: 'Akun Aktif',
     value: '480',
-    icon: CheckIcon,
+    icon: UserIcon,
   },
   {
     name: 'Akun Tidak Aktif',

@@ -37,29 +37,6 @@ const userNavigation = [
   { name: 'Sign out', href: '#' },
 ];
 
-const dataStatus = [
-  {
-    name: 'Diajukan',
-    value: '12',
-    icon: ClipboardIcon,
-  },
-  {
-    name: 'Progress',
-    value: '12',
-    icon: ClipboardListIcon,
-  },
-  {
-    name: 'Done',
-    value: '12',
-    icon: ClipboardCheckIcon,
-  },
-  {
-    name: 'Reject',
-    value: '12',
-    icon: ClipboardCopyIcon,
-  },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -87,8 +64,8 @@ export default function Index({ heading, children }) {
                         src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
                         alt="Workflow"
                       />
-                      <h1 className="text-xl font-semibold leading-relaxed tracking-wide">
-                        PINS
+                      <h1 className="text-xl font-bold leading-relaxed font-sans">
+                        NAMEAPP
                       </h1>
                     </div>
                   </div>

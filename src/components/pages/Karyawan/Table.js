@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 /* This example requires Tailwind CSS v2.0+ */
 const transactions = [
   {
@@ -73,13 +75,13 @@ export default function Table() {
                 <tbody className="divide-y divide-gray-200 bg-white">
                   {transactions.map((transaction) => (
                     <tr key={transaction.id}>
-                      <td className="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-6">
+                      <td className="whitespace-nowrap py-5 pl-4 pr-3 text-sm text-gray-500 sm:pl-6">
                         {transaction.nama}
                       </td>
                       <td className="whitespace-nowrap px-2 py-2 text-sm font-medium text-gray-900">
                         {transaction.nik}
                       </td>
-                      <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-900">
+                      <td className="whitespace-nowrap px-2 py-2 text-sm font-medium text-gray-900">
                         {transaction.posisi}
                       </td>
                       <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
@@ -90,15 +92,15 @@ export default function Table() {
                       </td>
 
                       <td className="relative whitespace-nowrap py-2 pl-3 pr-4 text-right space-x-2 text-sm font-medium sm:pr-6">
-                        <a
-                          href="#"
-                          className="text-blue-600 hover:text-blue-900">
+                        <Link
+                          to={'/preview'}
+                          className="text-blue-600 hover:text-blue-900 text-xs">
                           View
                           <span className="sr-only">, {transaction.id}</span>
-                        </a>
+                        </Link>
                         <a
                           href="#"
-                          className="text-red-600 hover:text-blue-900">
+                          className="text-red-600 hover:text-blue-900 text-xs">
                           Hapus
                           <span className="sr-only">, {transaction.id}</span>
                         </a>
